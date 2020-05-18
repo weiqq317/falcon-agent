@@ -18,7 +18,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/geekerlw/falcon-agent/g"
+	"falcon-agent/g"
+
 	"github.com/open-falcon/falcon-plus/common/model"
 )
 

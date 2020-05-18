@@ -110,12 +110,6 @@ func cpuGuestNice() float64 {
 	return cpuTime[1].GuestNice - cpuTime[0].GuestNice
 }
 
-func cpuStolen() float64 {
-	cpuLock.RLock()
-	defer cpuLock.RUnlock()
-	return cpuTime[1].Stolen - cpuTime[0].Stolen
-}
-
 func CpuMetrics() []*model.MetricValue {
 
 	return []*model.MetricValue{
@@ -129,7 +123,6 @@ func CpuMetrics() []*model.MetricValue {
 		GaugeValue("cpu.steal", cpuSteal()),
 		GaugeValue("cpu.guest", cpuGuest()),
 		GaugeValue("cpu.guestnice", cpuGuestNice()),
-		GaugeValue("cpu.stolen", cpuStolen()),
 		GaugeValue("cpu.used.percent", cpuPercent),
 	}
 

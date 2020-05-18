@@ -15,8 +15,9 @@
 package g
 
 import (
-	"log"
 	"runtime"
+
+	"log" // "github.com/Srupsen/logrus"
 )
 
 func init() {

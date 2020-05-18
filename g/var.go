@@ -49,7 +49,7 @@ func InitLocalIp() {
 			conn.Close()
 		}
 	} else {
-		log.Println("hearbeat is not enabled, can't get localip")
+		log.Println("心跳服务没有起动，不能获取本地IP.")
 	}
 }
 
@@ -100,14 +100,19 @@ func SendToTransfer(metrics []*model.MetricValue) {
 	debug := Config().Debug
 
 	if debug {
-		log.Printf("=> <Total=%d> %v\n", len(metrics), metrics[0])
+		log.Printf("[Debug]=> <Total=%d> %v\n", len(metrics), metrics[0])
+		if len(metrics) > 0 {
+			// for i := 1; i < len(metrics); i++ {
+			// 	log.Printf("[Debug]=> <Total=%d> %v\n", i, metrics[i])
+			// }
+		}
 	}
 
 	var resp model.TransferResponse
 	SendMetrics(metrics, &resp)
 
 	if debug {
-		log.Println("<=", &resp)
+		log.Println("[Debug]<=", &resp)
 	}
 }
 

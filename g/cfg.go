@@ -114,7 +114,7 @@ func IP() string {
 
 func ParseConfig(cfg string) {
 	if cfg == "" {
-		log.Fatalln("use -c to specify configuration file")
+		log.Fatalln("use -c to 指定配置文件")
 	}
 
 	if !file.IsExist(cfg) {
@@ -125,13 +125,13 @@ func ParseConfig(cfg string) {
 
 	configContent, err := file.ToTrimString(cfg)
 	if err != nil {
-		log.Fatalln("read config file:", cfg, "fail:", err)
+		log.Fatalln("读取配置文件:", cfg, "失败:", err)
 	}
 
 	var c GlobalConfig
 	err = json.Unmarshal([]byte(configContent), &c)
 	if err != nil {
-		log.Fatalln("parse config file:", cfg, "fail:", err)
+		log.Fatalln("解析文件:", cfg, "失败:", err)
 	}
 
 	lock.Lock()
@@ -139,5 +139,5 @@ func ParseConfig(cfg string) {
 
 	config = &c
 
-	log.Println("read config file:", cfg, "successfully")
+	log.Println("读取配置文件:", cfg, "成功！")
 }

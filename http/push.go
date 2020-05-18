@@ -16,27 +16,40 @@ package http
 
 import (
 	"encoding/json"
+	"falcon-agent/g"
+	"log"
 	"net/http"
 
-	"github.com/geekerlw/falcon-agent/g"
 	"github.com/open-falcon/falcon-plus/common/model"
 )
 
 func configPushRoutes() {
 	http.HandleFunc("/v1/push", func(w http.ResponseWriter, req *http.Request) {
+
+		if g.Config().Debug {
+			log.Println("[debug]/v1/push:", req)
+		}
+
 		if req.ContentLength == 0 {
 			http.Error(w, "body is blank", http.StatusBadRequest)
 			return
 		}
 
 		decoder := json.NewDecoder(req.Body)
+
 		var metrics []*model.MetricValue
 		err := decoder.Decode(&metrics)
 		if err != nil {
 			http.Error(w, "connot decode body", http.StatusBadRequest)
+			log.Println("connot decode body:", err)
 			return
 		}
 
+		if g.Config().Debug {
+			log.Println("[debug]/v1/push OK!:", req.Body)
+			log.Println("[debug]/v1/push Decoder OK!:", metrics)
+
+		}
 		g.SendToTransfer(metrics)
 		w.Write([]byte("success"))
 	})

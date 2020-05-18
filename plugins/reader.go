@@ -21,7 +21,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/geekerlw/falcon-agent/g"
+	"falcon-agent/g"
+
 	"github.com/toolkits/file"
 )
 

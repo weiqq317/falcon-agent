@@ -15,7 +15,7 @@
         "timeout": 1000
     },
     "transfer": {
-        "enabled": true,
+        "enabled": false,
         "addrs": [
             "127.0.0.1:8433",
             "127.0.0.1:8433"

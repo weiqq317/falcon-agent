@@ -20,7 +20,7 @@ import (
 	"net/http"
 	_ "net/http/pprof"
 
-	"github.com/geekerlw/falcon-agent/g"
+	"falcon-agent/g"
 )
 
 type Dto struct {
@@ -77,6 +77,6 @@ func Start() {
 		MaxHeaderBytes: 1 << 30,
 	}
 
-	log.Println("listening", addr)
+	log.Println("监听端口", addr)
 	log.Fatalln(s.ListenAndServe())
 }

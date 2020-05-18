@@ -1,0 +1,15 @@
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\bin\Debug\netcoreapp3.1\dotnet.exe
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\bin\Debug\netcoreapp3.1\dotnet.deps.json
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\bin\Debug\netcoreapp3.1\dotnet.runtimeconfig.json
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\bin\Debug\netcoreapp3.1\dotnet.runtimeconfig.dev.json
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\bin\Debug\netcoreapp3.1\dotnet.dll
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\bin\Debug\netcoreapp3.1\dotnet.pdb
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.csprojAssemblyReference.cache
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.AssemblyInfoInputs.cache
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.AssemblyInfo.cs
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.dll
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.pdb
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.genruntimeconfig.cache
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.csproj.CoreCompileInputs.cache
+C:\Users\weiqq_000\go\falcon-agent\plugins\dotnet\obj\Debug\netcoreapp3.1\dotnet.csproj.CopyComplete

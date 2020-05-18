@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4UyPVfZ3Dj/SLfb/8Sdw1ZZBMKnvS37fNwAawZ4E7z7GxecEhOZKxIZI7/aWUf0TlbHl4NhlW0EGIUFhm7jGKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\weiqq_000\\go\\falcon-agent\\plugins\\dotnet\\dotnet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\weiqq_000\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

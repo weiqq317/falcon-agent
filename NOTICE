@@ -8,3 +8,7 @@ You may not use this product except in compliance with the License.
 This product may include a number of subcomponents with separate copyright notices
 and license terms. Your use of these subcomponents is subject to the terms and
 conditions of the subcomponent's license, as noted in the LICENSE file.
+
+ [{"metric": "metric.demo", "endpoint": "qd-open-falcon-judge01.hd", "timestamp": 1589636520,"step": 60,"value": 9,"counterType": "GAUGE","tags": "project=falcon,module=judge"},
+ {"metric": "metric.demo", "endpoint": "qd-open-falcon-judge01.hd", "timestamp": 1589636520,"step": 60,"value": 9,"counterType": "GAUGE","tags": "project=falcon,module=judge"},
+ {"metric": "metric.demo", "endpoint": "qd-open-falcon-judge01.hd", "timestamp": 1589636520,"step": 60,"value": 9,"counterType": "GAUGE","tags": "project=falcon,module=judge"}]

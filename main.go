@@ -19,16 +19,16 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/geekerlw/falcon-agent/cron"
-	"github.com/geekerlw/falcon-agent/funcs"
-	"github.com/geekerlw/falcon-agent/g"
-	"github.com/geekerlw/falcon-agent/http"
+	"falcon-agent/cron"
+	"falcon-agent/funcs"
+	"falcon-agent/g"
+	"falcon-agent/http"
 )
 
 func main() {
 
-	cfg := flag.String("c", "cfg.json", "configuration file")
-	version := flag.Bool("v", false, "show version")
+	cfg := flag.String("c", "cfg.json", "配置文件")
+	version := flag.Bool("v", false, "查看版本号")
 
 	flag.Parse()
 
@@ -45,11 +45,11 @@ func main() {
 		g.InitLog("info")
 	}
 
-	g.InitRootDir()
-	g.InitLocalIp()
-	g.InitRpcClients()
+	g.InitRootDir()    //获取当前目前 给Root
+	g.InitLocalIp()    //获取本地ip 给 LocalIp
+	g.InitRpcClients() //初始化心跳连接 HbsClient
 
-	funcs.BuildMappers()
+	funcs.BuildMappers() //定时采集上报数据
 
 	go cron.InitDataHistory()
 

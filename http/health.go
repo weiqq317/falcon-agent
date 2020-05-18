@@ -17,7 +17,7 @@ package http
 import (
 	"net/http"
 
-	"github.com/geekerlw/falcon-agent/g"
+	"falcon-agent/g"
 )
 
 func configHealthRoutes() {

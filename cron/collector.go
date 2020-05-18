@@ -17,8 +17,9 @@ package cron
 import (
 	"time"
 
-	"github.com/geekerlw/falcon-agent/funcs"
-	"github.com/geekerlw/falcon-agent/g"
+	"falcon-agent/funcs"
+	"falcon-agent/g"
+
 	"github.com/open-falcon/falcon-plus/common/model"
 )
 
