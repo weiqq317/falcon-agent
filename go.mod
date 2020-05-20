@@ -5,6 +5,7 @@ go 1.14
 require (
 	github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d // indirect
 	github.com/go-ole/go-ole v1.2.4 // indirect
+	github.com/gonutz/ide v0.0.0-20200517034207-df64a3832118
 	github.com/open-falcon/falcon-plus v0.2.1
 	github.com/shirou/gopsutil v2.20.4+incompatible
 	github.com/sirupsen/logrus v1.6.0

@@ -61,6 +61,8 @@ func main() {
 
 	go http.Start()
 
+	//g.HideConsole()
+
 	select {}
 
 }
