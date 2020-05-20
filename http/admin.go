@@ -53,4 +53,14 @@ func configAdminRoutes() {
 	http.HandleFunc("/ips", func(w http.ResponseWriter, r *http.Request) {
 		RenderDataJson(w, g.TrustableIps())
 	})
+
+	http.HandleFunc("/hideconsole", func(w http.ResponseWriter, r *http.Request) {
+		g.HideConsole()
+		w.Write([]byte(" HideConsole ok!"))
+	})
+
+	http.HandleFunc("/showconsole", func(w http.ResponseWriter, r *http.Request) {
+		g.ShowConsole()
+		w.Write([]byte(" ShowConsole ok!"))
+	})
 }

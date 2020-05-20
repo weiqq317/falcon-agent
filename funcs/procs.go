@@ -26,6 +26,7 @@ import (
 
 func isProc(p *gp.Process, m map[int]string) bool {
 	for key, val := range m {
+		log.Println(p.Name)
 		if key == 1 {
 			// name
 			name, _ := p.Name()
@@ -78,6 +79,8 @@ func ProcMetrics() (L []*model.MetricValue) {
 		L = append(L, GaugeValue(g.PROC_NUM, cnt, tags))
 		L = append(L, GaugeValue("proc.cpu.percent", cpuTotal, tags))
 		L = append(L, GaugeValue("proc.mem.percent", memTotal, tags))
+
+		log.Println(L)
 	}
 	return
 }
